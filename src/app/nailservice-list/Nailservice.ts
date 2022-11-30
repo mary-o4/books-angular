@@ -1,8 +1,7 @@
-export interface Book{
+export interface Nailservice{
     name : string;
-    genre : string;
     price : number;
-    stock : number;
     image : string;
     clearance: boolean;
+    description: string;
 }

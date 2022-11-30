@@ -1,1 +1,9 @@
-<p>shopping-cart works!</p>
+<h3>Quiero este servicio</h3>
+<ul>
+    <li *ngFor="let nailservice of cartList">
+        {{nailservice.name | uppercase}}: {{nailservice.price | currency}} 
+        <button class="btn  btn-xs" (click)="removeFromCart(nailservice)">Quitar</button>
+    </li>
+    <li class="total" *ngIf="total()!=0">Total:{{total() | currency}}</li>
+    <button class="btn  btn-xs" *ngIf="total()!=0">Pagar</button>
+</ul>

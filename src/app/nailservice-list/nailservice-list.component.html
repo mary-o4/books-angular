@@ -1,0 +1,18 @@
+<h3>Conoce cuales son nuestros servicios</h3>
+
+<div class="row row-cols-3 row-cols-md-3 g-4" >
+    
+        <div class="col" *ngFor="let nailservice of nailservices" [ngClass]="{'clearance':nailservice.clearance}">
+            <div class="card border-secondary mb-3">
+                <img [src]="nailservice.image" class="card-img-top image" [alt]="nailservice.name">
+            <div class="card-body">
+                <h5 class="card-title">{{nailservice.name}}</h5>
+                <p>{{nailservice.price | currency}}</p>
+                <p class="card-text">{{nailservice.description}}</p>
+                <button href="" class="btn btn-secondary" (click)="addToCart(nailservice)">Lo quiero!</button>
+            
+            </div>
+            </div>
+        </div>
+    
+</div>

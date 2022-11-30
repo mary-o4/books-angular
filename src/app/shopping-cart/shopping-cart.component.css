@@ -1,0 +1,15 @@
+ul{
+    list-style: none;;
+}
+
+li.total{
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+}
+
+button.btn{
+    background-color: lightpink;
+}
