@@ -10,7 +10,7 @@ import { NailshopComponent } from './nailshop/nailshop.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import {HttpClientModule} from '@angular/common/http';
-import { NailshopHomeComponent } from './nailshop-home/nailshop-home.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { NailshopHomeComponent } from './nailshop-home/nailshop-home.component';
     ShoppingCartComponent,
     NailshopAboutComponent,
     NailshopComponent,
-    NailshopHomeComponent,
+    
    
   ],
   imports: [
